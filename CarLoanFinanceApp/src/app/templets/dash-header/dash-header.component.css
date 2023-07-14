@@ -1,0 +1,25 @@
+.d-flex{
+    background-color: #d0dae5;
+    margin-inline-start: 0%;
+    margin-inline-end: 0%;
+   
+  }
+  
+  .container{
+   margin-top: 30%;
+   padding-inline-start: 0%;
+   
+  }
+
+  .row{
+    color: black;
+  }
+
+  .btn{
+    margin-left: 70%;
+  }
+
+  .col-6{
+    padding-inline-start: 2%;
+    
+   }

@@ -1,0 +1,43 @@
+
+<form [formGroup]="emiform" (ngSubmit)="emiCalculator()">
+<body>
+    <div class="wrapper">
+        <h2>Loan EMI Calculator</h2>
+        <div class="calculator">
+            <div class="calculator-input">
+                <label for="">Loan Amount (Rs.):</label>
+                <input type="number" id="loan_amount" formControlName="loan_Amount">
+            </div>
+            <div class="calculator-input">
+                <label for="">Loan Tenure (Months.):</label>
+                <input type="number" id="loan_tenure" formControlName="tenure">
+            </div>
+            <div class="calculator-input">
+                <label for="">Interest Rate (%):</label>
+                <input type="number" id="loan_interest" formControlName="interest_rates">
+            </div>
+            <div class="calculator-input">
+                <button class="btn btn-primary" type="submit">Calculate EMI</button>
+            </div>
+        </div>
+
+        <label ></label>
+
+        <!-- <div class="calculator-result">
+          
+            <canvas id="loanChart"></canvas>
+            <ul>
+                <li>Monthly Loan EMI: <span class="loan_emi"></span></li>
+                <li>Principle Amount: <span class="loan_principle"></span></li>
+                <li>Loan on Interest: <span class="loan_interest_rate"></span></li>
+                <li>Total Amount to be paid: <span class="loan_total"></span></li>
+            </ul>
+        </div> -->
+ 
+    </div>
+  
+</body>
+</form>
+
+
+

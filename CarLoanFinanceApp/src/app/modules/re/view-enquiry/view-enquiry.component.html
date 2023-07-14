@@ -1,0 +1,38 @@
+<p>view-enquiry works!</p>
+
+<div class="row w-100 m-0 p-0">
+    <table >
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Mobile No</th>
+            <th scope="col">DOB</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Age</th>
+            <th scope="col">Pancard</th>
+            <th scope="col">Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let enq of enqData">
+            <th scope="row">{{enq.cid}}</th>
+            <td>{{enq.firstName}}</td>
+            <td>{{enq.lastName}}</td>
+            <td>{{enq.mobileNo}}</td>
+            <td>{{enq.dateofBirth}}</td>
+            <td>{{enq.gender}}</td>
+            <td>{{enq.age}}</td>
+            <td>{{enq.panCard}}</td>
+            <td>{{enq.address}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+
+
+
+

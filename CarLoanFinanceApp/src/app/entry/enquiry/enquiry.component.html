@@ -1,0 +1,43 @@
+
+
+<div class="container-fluid px-1 py-5 mx-auto">
+    <div class="row d-flex justify-content-center">
+        <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+            <h3>Enquiry Form</h3>
+             <!-- <p class="blue-text">Just answer a few questions<br> so that we can personalize the right experience for you.</p>  -->
+            <div class="card">
+                 <!-- <h5 class="text-center mb-4">Powering world-class companies</h5>  -->
+                <form class="form-card"  [formGroup]="enqform" (ngSubmit)="saveEnquiry()">
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3" >First name<span class="text-danger"> *</span></label> <input type="text" id="fname" name="fname" placeholder="Enter your first name"  formControlName="firstName"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3" >Last name<span class="text-danger"> *</span></label> <input type="text" id="lname" name="lname" placeholder="Enter your last name" formControlName="lastName"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3" >Date Of Birth<span class="text-danger"> *</span></label> <input type="text" id="email" name="email" placeholder=" Date OF Birth" formControlName="dateofBirth"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3" >Mobile number<span class="text-danger"> *</span></label> <input type="text" id="mob" name="mob" placeholder="" formControlName="mobileNo"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Gender<span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="Gender"  formControlName="gender"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3" >Age<span class="text-danger"> *</span></label> <input type="text" id="mob" name="mob" placeholder="Age" formControlName="age"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3" >PanCard No<span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="Pancard" formControlName="panCard"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3" >Address<span class="text-danger"> *</span></label> <input type="text" id="mob" name="mob" placeholder=" Address" formControlName="address"> </div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="form-group col-sm-6"> <button type="submit" class="btn btn-primary">Submit</button> </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> 
+
+
+<!-- <div>
+    <form  [formGroup]="enqform" (ngSubmit)="saveEnquiry()">
+      first name  <input formControlName="firstName">
+
+      <button>Submit</button>
+    </form>
+</div> -->

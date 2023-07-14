@@ -1,0 +1,11 @@
+
+
+<div class="menu">
+    <p>user-menu works!</p>
+     <div *ngFor="let option of userOptions[0][userType]"> 
+        <button class="btn btn-primary ms-5 mt-3"  (click)="navigateTo(option.path)">{{option.lable}}</button>
+     </div>
+
+    </div>
+
+    
