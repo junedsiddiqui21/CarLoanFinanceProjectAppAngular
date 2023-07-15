@@ -13,7 +13,7 @@ export class DashHeaderComponent implements OnInit {
   ngOnInit(): void {
 
     let ut : string = sessionStorage.getItem('userType');
-    this.user = JSON.parse(ut);
+    // this.user = JSON.parse(ut);
    
     if(ut=='re')
     {

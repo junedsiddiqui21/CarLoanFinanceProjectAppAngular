@@ -1,24 +1,40 @@
 
-     
+#container {
+  height: 100%;
+  width: 100%;
+  background: rgb(4, 12, 4);
+  position: absolute;
+}
+#header {
+  height: 100px;
+  width: 100%;
+  background:rgb(53, 175, 175)
+}
+#body {
+  height: 60%;
+  width: 100%;
+  background: #f9f9fd;
+}​  
 .top-headr{
-  background-color: #7aafe8;
+  background-color: #2dad2d;
   margin-inline-start: 0%;
   margin-inline-end: 0%;
  
 }
 
 .bottom-header{
-  background-color: #d0dae5;
+  background-color: #edf1ed;
   margin-inline-start: 0%;
   margin-inline-end: 0%;
  
 }
-
-
-.img{
-  margin-top: -8%;
-
+img
+{
+Padding: 10px,10px; 
 }
+
+
+  
 
 
 .col-6{
@@ -29,6 +45,7 @@
 .log{
 margin-left: 70%;
 }
+
 
 
 
