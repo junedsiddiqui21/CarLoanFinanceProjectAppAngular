@@ -34,6 +34,20 @@ export class CommmonService {
     return this.http.get('http://localhost:9090/Enquiry/GetEnquiry');
   }
 
+  // --------- check Cibil ---------
+
+  getCibilScore(cid:number)
+  {
+    return this.http.get('http://localhost:9090/Enquiry/CheckCIBIL/'+cid);
+  }
+
+  getSingleEnquiry(cid:number)
+  {
+    return this.http.get('http://localhost:9090/Enquiry/singleEnquiry/'+cid);
+  }
+
+  
+
 
 
 
