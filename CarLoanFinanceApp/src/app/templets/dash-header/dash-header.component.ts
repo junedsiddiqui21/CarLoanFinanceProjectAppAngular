@@ -14,10 +14,14 @@ export class DashHeaderComponent implements OnInit {
 
     let ut : string = sessionStorage.getItem('userType');
     // this.user = JSON.parse(ut);
+<<<<<<< HEAD
    
+=======
+  
+>>>>>>> 6a547774ebef2443d7491cd0fdb0932f99cd289a
     if(ut=='re')
     {
-      this.userRole = 'Relationship Executive'
+      this.userRole = 'Relationship Executive';
     }
     else if (ut=='oe')
     {
@@ -32,8 +36,5 @@ export class DashHeaderComponent implements OnInit {
       this.userRole = 'Account Head'
     }
   }
-
-
-  
 
 }

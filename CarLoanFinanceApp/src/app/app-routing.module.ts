@@ -13,8 +13,16 @@ import { EMICalculatorComponent } from './templets/emi-calculator/emi-calculator
 const routes: Routes = [
   
 
+<<<<<<< HEAD
   {
     path : '',component : HomeComponent,children : [
+=======
+  {path : '',component : HomeComponent,
+  children : [
+    
+
+   
+>>>>>>> 6a547774ebef2443d7491cd0fdb0932f99cd289a
       {path : 'aboutus', component : AboutUsComponent},
       {path : 'location', component : LocationComponent},
       {path : 'contact', component : ContactComponent},
@@ -39,13 +47,21 @@ const routes: Routes = [
     }
    ]},
    
+<<<<<<< HEAD
   ]
+=======
+  ];
+  
+>>>>>>> 6a547774ebef2443d7491cd0fdb0932f99cd289a
 
 
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6a547774ebef2443d7491cd0fdb0932f99cd289a
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

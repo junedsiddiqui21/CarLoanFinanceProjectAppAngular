@@ -20,7 +20,7 @@ export class UserMenuComponent implements OnInit {
   }
 
   navigateTo(path:string){
-    this.router.navigateByUrl('/dashboard/'+this.userType+'/'+path)
+    this.router.navigateByUrl('/dashboard/'+this.userType+'/'+path);
   }
   
 }

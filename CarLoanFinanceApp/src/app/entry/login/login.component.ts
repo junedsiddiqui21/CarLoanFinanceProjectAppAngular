@@ -17,7 +17,8 @@ export class LoginComponent implements OnInit
 
     this.loginform = this.fb.group({
       username : [],
-      password : []
+      password : [],
+      userType : []
     })   
   }
 
@@ -33,14 +34,24 @@ onlogin(){
   //     if(response!=null){
   //       console.log(response);
   //       sessionStorage.setItem('userType',JSON.stringify(response));
+<<<<<<< HEAD
   //       this.router.navigateByUrl("/dashboard");
+=======
+  //       this.router.navigateByUrl("/dashboard/re");
+        
+>>>>>>> 6a547774ebef2443d7491cd0fdb0932f99cd289a
   //     }
   //     else{
   //       alert("Enter Correct Uername And Password");
   //     }
   //   }
+<<<<<<< HEAD
     
   // )
+=======
+     
+  //  )
+>>>>>>> 6a547774ebef2443d7491cd0fdb0932f99cd289a
 
 
   if(this.loginform.controls['username'].value=='re',

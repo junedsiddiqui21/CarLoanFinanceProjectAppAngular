@@ -10,6 +10,7 @@ import { CommmonService } from 'src/app/shared/commmon.service';
 export class EMICalculatorComponent implements OnInit {
 
   emiform : FormGroup;
+  emiData : any;
   constructor(private fb : FormBuilder, private cs : CommmonService){}
   ngOnInit(): void {
     this.emiform = this.fb.group({
@@ -24,13 +25,12 @@ export class EMICalculatorComponent implements OnInit {
 
   emiCalculator()
   {
-    
     console.log(this.emiform.value)
-    this.cs.EmiCalculator(this.emiform.value).subscribe();
+    this.cs.EmiCalculator(this.emiform.value).subscribe((response:any)=>{
+      this.emiData = response;
+    });
   }
 
 
-
-  
 
 }

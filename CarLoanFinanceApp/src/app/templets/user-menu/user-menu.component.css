@@ -1,6 +1,15 @@
 .menu{
     background-color: #d0dae5;
-    margin-top: 10%;
+    margin-top: 1%;
     padding-bottom: 100%;
     
+}
+
+.nav-link{
+    border-bottom: 1px solid black;
+    margin-left: 10%;
+}
+
+.rounded-circle{
+    margin-left: 10%;
 }
