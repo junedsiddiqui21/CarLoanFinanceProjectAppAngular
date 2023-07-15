@@ -17,8 +17,7 @@ const routes: Routes = [
   children : [
     
 
-    {path : '', component : HomeHeaderComponent,
-    children : [
+   
       {path : 'aboutus', component : AboutUsComponent},
       {path : 'location', component : LocationComponent},
       {path : 'contact', component : ContactComponent},
@@ -43,13 +42,13 @@ const routes: Routes = [
     }
    ]},
    
-  ]
+  ];
   
-}
 
 
 
-];
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

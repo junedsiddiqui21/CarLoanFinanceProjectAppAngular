@@ -13,11 +13,11 @@ export class DashHeaderComponent implements OnInit {
   ngOnInit(): void {
 
     let ut : string = sessionStorage.getItem('userType');
-    this.user = JSON.parse(ut);
-   
+    // this.user = JSON.parse(ut);
+  
     if(ut=='re')
     {
-      this.userRole = 'Relationship Executive'
+      this.userRole = 'Relationship Executive';
     }
     else if (ut=='oe')
     {
@@ -32,8 +32,5 @@ export class DashHeaderComponent implements OnInit {
       this.userRole = 'Account Head'
     }
   }
-
-
-  
 
 }

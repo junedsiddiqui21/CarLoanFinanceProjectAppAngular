@@ -19,7 +19,7 @@ export class CommmonService {
 
   EmiCalculator(e:any)
   {
-    return this.http.post('http://localhost:9090/emi_calculator',e);
+    return this.http.post('http://localhost:9090/emi_calculate',e);
   }
 
   // -------  Save Enquiry  ------
