@@ -4,7 +4,7 @@
 <div class="row w-100 m-0 p-0">
     <table >
         <thead>
-          <tr>
+          <!-- <tr>
             <th scope="col">Id</th>
             <th scope="col">First Name</th>
             <th scope="col">Last Name</th>
@@ -16,11 +16,11 @@
             <th scope="col">Address</th>
             <th scope="col">Cibil Status</th>
             <th scope="col">Cibil Score</th>
-          </tr>
+          </tr> -->
         </thead>
         <tbody>
-          <tr *ngFor="let e of singleEnqData">
-            <th scope="row">{{e.cid}}</th>
+          <tr *ngFor="let e of enqData">
+            <!-- <th scope="row">{{e.cid}}</th>
             <td>{{e.firstName}}</td>
             <td>{{e.lastName}}</td>
             <td>{{e.mobileNo}}</td>
@@ -30,12 +30,55 @@
             <td>{{e.panCard}}</td>
             <td>{{e.address}}</td>
             <td>{{e.cibilstatus}}</td>
-            <td>{{e.cibilscore}}</td>
-            <button class=" btn btn-success" (click)="getCibil(e.cid)">Cibil Check</button>
+            <td>{{e.cibilscore}}</td> -->
+            <!-- <button class=" btn btn-success" (click)="getCibil(e.cid)">Cibil Check</button> -->
+            <button (click)="getForwerdedData(e.forwardStatus)">all Data</button>
           </tr>
         </tbody>
       </table>
 </div>
 
 
-{{cibilScore|json}}
+
+<div class="row w-100 m-0 p-0">
+  <table >
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Mobile No</th>
+          <th scope="col">DOB</th>
+          <th scope="col">Gender</th>
+          <th scope="col">Age</th>
+          <th scope="col">Pancard</th>
+          <th scope="col">Address</th>
+          <th scope="col">Cibil Status</th>
+          <th scope="col">Cibil Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let f of forwardform">
+          <th scope="row">{{f.cid}}</th>
+          <td>{{f.firstName}}</td>
+          <td>{{f.lastName}}</td>
+          <td>{{f.mobileNo}}</td>
+          <td>{{f.dateofBirth}}</td>
+          <td>{{f.gender}}</td>
+          <td>{{f.age}}</td>
+          <td>{{f.panCard}}</td>
+          <td>{{f.address}}</td>
+          <td>{{f.cibilstatus}}</td>
+          <td>{{f.cibilscore}}</td>
+          <button class=" btn btn-success" (click)="getCibil(f.cid)">Cibil Check</button>
+       
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+
+<!-- {{cibilScore|json}} -->
+
+<!-- {{forwardform|json}} -->
+

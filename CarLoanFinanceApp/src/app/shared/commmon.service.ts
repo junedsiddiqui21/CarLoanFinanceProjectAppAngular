@@ -46,6 +46,16 @@ export class CommmonService {
     return this.http.get('http://localhost:9090/Enquiry/singleEnquiry/'+cid);
   }
 
+  getForwerdedformData(cid:number){
+    return this.http.get('http://localhost:9090/Enquiry/forwarded/'+cid);
+  }
+
+  getForwardFormBYSatus(forwardStatus:string){
+    return this.http.get('http://localhost:9090/Enquiry/getForwardForm/'+forwardStatus);
+  }
+
+
+
   
 
 

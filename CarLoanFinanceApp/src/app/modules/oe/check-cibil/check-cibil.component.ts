@@ -19,12 +19,14 @@ export class CheckCibilComponent {
       })
     }
 
-    singleEnqData : any;
-    getForwerdedData(cid:number)
+    
+
+    forwardform : any;
+    getForwerdedData(forwardStatus:string)
     {
-      alert("Data Successfully Forwerded !!!")
-      this.cs.getSingleEnquiry(cid).subscribe((response:any)=>{
-        this.singleEnqData = response;
+      this.cs.getForwardFormBYSatus(forwardStatus).subscribe((response:any)=>{
+        this.forwardform = response;
+       
       })
       
     }
@@ -36,6 +38,7 @@ getCibil(cid:number)
   alert("check Cibil")
   this.cs.getCibilScore(cid).subscribe((response:any)=>{
     this.cibilScore = response;
+    window.location.reload();
   });
 }
 

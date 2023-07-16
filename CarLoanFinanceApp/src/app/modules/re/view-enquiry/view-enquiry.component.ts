@@ -17,6 +17,13 @@ enqData : any;
     })
   }
 
+  getForwerdedData(cid:number){
+    alert("form Forwarded To OE..!!!")
+    this.cs.getForwerdedformData(cid).subscribe();
+  }
+
+
+
 
 
 }

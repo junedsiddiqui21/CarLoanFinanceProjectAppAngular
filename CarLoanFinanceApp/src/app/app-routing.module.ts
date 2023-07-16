@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './entry/home/home.component';
-import { HomeHeaderComponent } from './templets/home-header/home-header.component';
 import { AboutUsComponent } from './templets/about-us/about-us.component';
 import { LocationComponent } from './templets/location/location.component';
 import { ContactComponent } from './templets/contact/contact.component';
@@ -12,12 +11,9 @@ import { EMICalculatorComponent } from './templets/emi-calculator/emi-calculator
 
 const routes: Routes = [
   
-
-  {path : '',component : HomeComponent,
+  {
+    path : '',component : HomeComponent,
   children : [
-    
-
-   
       {path : 'aboutus', component : AboutUsComponent},
       {path : 'location', component : LocationComponent},
       {path : 'contact', component : ContactComponent},
@@ -40,13 +36,10 @@ const routes: Routes = [
     {
       path : 'ah', loadChildren:()=>import('src/app/modules/ah/ah.module').then(m=>m.AhModule)
     }
-   ]},
+   ]
+  }
    
   ];
-  
-
-
-
 
 
 
