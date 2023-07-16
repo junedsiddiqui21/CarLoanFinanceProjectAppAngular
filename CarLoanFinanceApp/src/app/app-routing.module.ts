@@ -15,9 +15,13 @@ const routes: Routes = [
   
   {
     path : '',component : HomeComponent,
+<<<<<<< HEAD
     children : [
    
       {path : 'home', component :HomePageComponent },
+=======
+  children : [
+>>>>>>> e278a6775bb5f48dd3a7cb3873e42bd4251f5df9
       {path : 'aboutus', component : AboutUsComponent},
       {path : 'location', component : LocationComponent},
       {path : 'contact', component : ContactComponent},
@@ -41,8 +45,10 @@ const routes: Routes = [
       
       path : 'ah', loadChildren:()=>import('src/app/modules/ah/ah.module').then(m=>m.AhModule)
     }
-   ]},
+   ]
+  }
    
+<<<<<<< HEAD
   ]
 
 
@@ -50,6 +56,12 @@ const routes: Routes = [
 
 
 
+=======
+  ];
+
+
+
+>>>>>>> e278a6775bb5f48dd3a7cb3873e42bd4251f5df9
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

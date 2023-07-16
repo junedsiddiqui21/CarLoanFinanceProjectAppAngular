@@ -13,8 +13,9 @@
             <th scope="col">Age</th>
             <th scope="col">Pancard</th>
             <th scope="col">Address</th>
-            <th scope="col">Cibil Status</th>
-            <th scope="col">Cibil Score</th>
+            <!-- <th scope="col">Cibil Status</th>
+            <th scope="col">Cibil Score</th> -->
+            <th scope="col">Action</th>
           </tr>
         </thead>
         <tbody>
@@ -28,8 +29,12 @@
             <td>{{enq.age}}</td>
             <td>{{enq.panCard}}</td>
             <td>{{enq.address}}</td>
-            <td>{{enq.cibilstatus}}</td>
-            <td>{{enq.cibilscore}}</td>
+            <!-- <td>{{enq.cibilstatus}}</td>
+            <td>{{enq.cibilscore}}</td> -->
+            <td>
+              <button class="btn btn-success" (click)="getForwerdedData(enq.cid)" >Forward</button> &nbsp;
+              <button class="btn btn-danger">Reject</button>
+            </td>
           </tr>
         </tbody>
       </table>

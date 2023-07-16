@@ -28,6 +28,7 @@ onlogin(){
   let username : string = this.loginform.controls['username'].value;
   let password : string = this.loginform.controls['password'].value;
 
+<<<<<<< HEAD
   // this.cs.getUserLoginData(username,password).subscribe(
   //   (response : any)=>
   //   {
@@ -65,6 +66,23 @@ onlogin(){
   {
     alert("Enter correct username password....!!")
   }
+=======
+
+  this.cs.getUserLoginData(username,password).subscribe(
+    (response : any)=>
+    {
+      if(response!=null){
+        console.log(response.userType);
+        sessionStorage.setItem('userType',response.userType);
+        this.router.navigateByUrl("/dashboard");
+        
+      }
+      else{
+        alert("Enter Correct Uername And Password");
+      }
+    }  
+   )
+>>>>>>> e278a6775bb5f48dd3a7cb3873e42bd4251f5df9
 }
 
 
