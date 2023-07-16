@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserMenuComponent } from './templets/user-menu/user-menu.component';
 import { DashHeaderComponent } from './templets/dash-header/dash-header.component';
 import { EMICalculatorComponent } from './templets/emi-calculator/emi-calculator.component';
+import { HomePageComponent } from './templets/home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { EMICalculatorComponent } from './templets/emi-calculator/emi-calculator
     UserMenuComponent,
     DashHeaderComponent,
     EMICalculatorComponent,
+    HomePageComponent,
     
   
    
