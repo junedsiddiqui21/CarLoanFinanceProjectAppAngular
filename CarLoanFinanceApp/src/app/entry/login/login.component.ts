@@ -27,62 +27,18 @@ onlogin(){
 
   let username : string = this.loginform.controls['username'].value;
   let password : string = this.loginform.controls['password'].value;
-
-<<<<<<< HEAD
-  // this.cs.getUserLoginData(username,password).subscribe(
-  //   (response : any)=>
-  //   {
-  //     if(response!=null){
-  //       console.log(response);
-  //       sessionStorage.setItem('userType',JSON.stringify(response));
-  //     }
-  //     else{
-  //       alert("Enter Correct Uername And Password");
-  //     }
-  //   }
-
-
-  if(this.loginform.controls['username'].value=='re',
-  this.loginform.controls['password'].value=='re'){
-    sessionStorage.setItem('userType','re');
-    this.router.navigateByUrl("/dashboard");
-  }
-  else if(this.loginform.controls['username'].value=='oe',
-  this.loginform.controls['username'].value=='oe'){
-    sessionStorage.setItem('userType','oe');
-    this.router.navigateByUrl("/dashboard")
-  }
-  else if(this.loginform.controls['username'].value=='cm',
-  this.loginform.controls['username'].value=='cm'){
-    sessionStorage.setItem('userType','cm');
-    this.router.navigateByUrl("/dashboard")
-  }
-  else if(this.loginform.controls['username'].value=='ah',
-  this.loginform.controls['username'].value=='ah'){
-    sessionStorage.setItem('userType','ah');
-    this.router.navigateByUrl("/dashboard")
-  }
-  else
-  {
-    alert("Enter correct username password....!!")
-  }
-=======
-
+  
   this.cs.getUserLoginData(username,password).subscribe(
     (response : any)=>
     {
       if(response!=null){
-        console.log(response.userType);
-        sessionStorage.setItem('userType',response.userType);
-        this.router.navigateByUrl("/dashboard");
-        
+        console.log(response);
+        sessionStorage.setItem('userType',JSON.stringify(response));
       }
       else{
         alert("Enter Correct Uername And Password");
       }
-    }  
-   )
->>>>>>> e278a6775bb5f48dd3a7cb3873e42bd4251f5df9
+    }
 }
 
 
