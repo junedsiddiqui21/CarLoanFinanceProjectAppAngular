@@ -14,11 +14,7 @@ export class DashHeaderComponent implements OnInit {
 
     let ut : string = sessionStorage.getItem('userType');
     // this.user = JSON.parse(ut);
-<<<<<<< HEAD
 
-=======
-   
->>>>>>> e278a6775bb5f48dd3a7cb3873e42bd4251f5df9
     if(ut=='re')
     {
       this.userRole = 'Relationship Executive';
